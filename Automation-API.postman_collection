@@ -1,0 +1,91 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Automation-API",
+		"_postman_id": "3ce02469-56a3-b18c-f1f9-0b293f1cd6e2",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "REST API",
+			"request": {
+				"url": "https://testmanagement.qmetry.com/rest/import/createandscheduletestresults/1",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "scope",
+						"value": "default",
+						"description": ""
+					},
+					{
+						"key": "apikey",
+						"value": "<apiKey>",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"value": "",
+							"type": "file"
+						},
+						{
+							"key": "entityType",
+							"value": "<JUNIT,HPUFT,QAF,TESTNG,CUCUMBER>",
+							"type": "text"
+						},
+						{
+							"key": "buildID",
+							"value": "<>",
+							"type": "text"
+						},
+						{
+							"key": "platformID",
+							"value": "<>",
+							"type": "text"
+						},
+						{
+							"key": "testsuiteId",
+							"value": "<>",
+							"type": "text"
+						},
+						{
+							"key": "projectID",
+							"value": "<>",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "releaseID",
+							"value": "<>",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "cycleID",
+							"value": "<>",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "dropID",
+							"value": "<>",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
