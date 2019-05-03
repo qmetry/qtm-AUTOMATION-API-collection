@@ -2,13 +2,13 @@
 	"variables": [],
 	"info": {
 		"name": "Automation-API",
-		"_postman_id": "3ce02469-56a3-b18c-f1f9-0b293f1cd6e2",
+		"_postman_id": "95e8f164-b61a-d13e-a595-3917e45968a9",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "REST API",
+			"name": "Automation API",
 			"request": {
 				"url": "https://testmanagement.qmetry.com/rest/import/createandscheduletestresults/1",
 				"method": "POST",
@@ -33,53 +33,54 @@
 					"mode": "formdata",
 					"formdata": [
 						{
-							"key": "file",
-							"value": "",
-							"type": "file"
-						},
-						{
 							"key": "entityType",
 							"value": "<JUNIT,HPUFT,QAF,TESTNG,CUCUMBER>",
 							"type": "text"
 						},
 						{
-							"key": "buildID",
-							"value": "<>",
-							"type": "text"
-						},
-						{
-							"key": "platformID",
-							"value": "<>",
-							"type": "text"
-						},
-						{
-							"key": "testsuiteId",
+							"key": "automationHierarchy",
 							"value": "<>",
 							"type": "text"
 						},
 						{
 							"key": "projectID",
 							"value": "<>",
-							"description": "",
 							"type": "text"
 						},
 						{
-							"key": "releaseID",
-							"value": "<>",
-							"description": "",
-							"type": "text"
+							"key": "file",
+							"type": "file",
+							"src": "",
+							"value": ""
 						},
 						{
 							"key": "cycleID",
 							"value": "<>",
-							"description": "",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						},
 						{
-							"key": "dropID",
+							"key": "releaseID",
 							"value": "<>",
-							"description": "",
-							"type": "text"
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "buildID",
+							"value": "<>",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "platformID",
+							"value": "<>",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "testsuiteId",
+							"value": "<>",
+							"disabled": true
 						}
 					]
 				},
